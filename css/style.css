@@ -749,7 +749,7 @@ Help section
 
 .help-list li::after {
 	position: absolute;
-	content: url(../img/ok-icon.png);
+	/* content: url(../img/ok-icon.png); */
 	left: 0;
 	top: -1px;
 }
@@ -821,7 +821,7 @@ Footer section
  ---------------------*/
 
 .footer-section {
-	padding: 100px 0 0;
+	padding: 50px 0 0;
 	background: #22242b;
 }
 
@@ -832,12 +832,12 @@ Footer section
 
 .footer-logo {
 	display: inline-block;
-	margin-bottom: 50px;
+	/* margin-bottom: 50px; */
 }
 
-.footer-widget {
+/* .footer-widget {
 	margin-bottom: 50px;
-}
+} */
 
 .footer-widget h2 {
 	font-size: 18px;
@@ -1613,4 +1613,97 @@ Contact Page
 	.loans-text ul {
 		padding-left: 0;
 	}
+}
+
+/* -- Alterações Vander -- */
+
+.banner {
+    background-image: url(/img/student-849825_1920.jpg);
+    height: 100vh;
+}
+
+.help-section, .footer-section {
+	background: #0b0440;
+	background-image: url(/img/network-3357642_1920.jpg);
+}
+
+.color-red {
+	color: #da2c1f;
+}
+
+.footer-logo img {
+	height: 100px;
+}
+
+.icon-footer {
+	color: white;
+	height: 50px;
+}
+
+.lista-icones-footer li {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.copyright {
+	color: #fff;
+}
+
+.list-vantagens {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+}
+
+.list-vantagens > div {
+	background-color: rgba(7, 107, 133, 0.7);
+	color: #fff;
+	font-size: 16pt;
+	height: 250px;
+	width: 250px;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.list-vantagens {
+		margin: 0 auto;
+		grid-template-columns: 1fr 1fr 1fr;
+    	grid-gap: 10px 10px;
+	}
+}
+
+/* Tablet :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.list-vantagens {
+		margin: 0 auto;
+		grid-template-columns: 1fr 1fr;
+    	grid-gap: 10px 10px;
+	}
+
+	.list-vantagens > div {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+	.list-vantagens {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.list-vantagens > div {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+/* Small Mobile :320px. */
+@media only screen and (max-width: 479px) {
+
 }
