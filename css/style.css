@@ -821,7 +821,7 @@ Footer section
  ---------------------*/
 
 .footer-section {
-	padding: 50px 0 0;
+	padding: 20px 0 0;
 	background: #22242b;
 }
 
@@ -860,7 +860,7 @@ Footer section
 .copyright {
 	color: #74757b;
 	font-size: 14px;
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 }
 
 .copyright i {
@@ -1618,8 +1618,18 @@ Contact Page
 /* -- Alterações Vander -- */
 
 .banner {
-    background-image: url(/img/student-849825_1920.jpg);
+	background-image: url(/img/student-849825_1920.jpg);
+	background-attachment: fixed;
     height: 100vh;
+}
+
+.banner > .container, .banner > .container > .row {
+	height: 100%;
+	align-items: center;
+}
+
+.slicknav_btn {
+	background-color: #da2c1f;
 }
 
 .help-section, .footer-section {
@@ -1627,17 +1637,27 @@ Contact Page
 	background-image: url(/img/network-3357642_1920.jpg);
 }
 
+.why-section {
+	background-image: url(/img/232347-P28RLR-805.jpg);
+	background-position: center;
+	background-attachment: fixed;
+}
+
 .color-red {
 	color: #da2c1f;
 }
 
+.footer-container {
+	line-height: 50px;
+}
+
 .footer-logo img {
-	height: 100px;
+	height: 50px;
 }
 
 .icon-footer {
 	color: white;
-	height: 50px;
+	height: 20pt;
 }
 
 .lista-icones-footer li {
@@ -1655,15 +1675,29 @@ Contact Page
     grid-gap: 10px 10px;
 }
 
-.list-vantagens > div {
+.list-vantagens .icone-vantagens img {
+	height: 70px;
+	max-width: 100%;
+}
+
+.list-vantagens .texto-vantagens {
+	flex: 1;
+	height: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-vantagens > .itens-vantagens {
 	background-color: rgba(7, 107, 133, 0.7);
 	color: #fff;
-	font-size: 16pt;
+	font-size: 15pt;
 	height: 250px;
 	width: 250px;
 	padding: 10px;
 	text-align: center;
 	display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1682,7 +1716,7 @@ Contact Page
     	grid-gap: 10px 10px;
 	}
 
-	.list-vantagens > div {
+	.list-vantagens > .itens-vantagens {
 		display: block;
 		width: 100%;
 		margin-bottom: 10px;
@@ -1696,7 +1730,7 @@ Contact Page
 		display: block;
 	}
 
-	.list-vantagens > div {
+	.list-vantagens > .itens-vantagens {
 		display: block;
 		width: 100%;
 		margin-bottom: 10px;
