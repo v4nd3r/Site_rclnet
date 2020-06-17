@@ -1796,5 +1796,19 @@ Contact Page
 
 /* Small Mobile :320px. */
 @media only screen and (max-width: 479px) {
+	.lista-produtos {
+		margin: 0 auto;
+		display: block;
+	}
 
+	.lista-produtos > .item-produtos {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.produtos-section {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
 }
