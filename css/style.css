@@ -446,7 +446,6 @@ Header section
 
 .site-logo {
 	float: left;
-	display: inline-block;
 	/* padding: 33px 0; */
 	padding: 15px 0;
 }
@@ -726,6 +725,7 @@ Help section
 
 .help-section {
 	background: #22242b;
+	color: #fff;
 }
 
 .help-list {
@@ -1476,16 +1476,20 @@ Contact Page
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.header-section {
-		padding: 0 25px;
+		padding: 0 0 0 25px;
 	}
 	.main-menu {
-		padding-right: 0;
+		padding-right: 10px;
 	}
 	.main-menu li a {
 		margin-right: 0;
 		margin-left: 30px;
 	}
-	.header-right {
+
+	/* .header-right a.hr-btn {
+		display: none;
+	} */
+	.header-right div.hr-btn-2 {
 		display: none;
 	}
 	.hero-slider .owl-dots {
@@ -1623,6 +1627,14 @@ Contact Page
     height: 100vh;
 }
 
+.produtos-section {
+	background-image: url(/img/71162.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
 .banner > .container, .banner > .container > .row {
 	height: 100%;
 	align-items: center;
@@ -1689,7 +1701,7 @@ Contact Page
 }
 
 .list-vantagens > .itens-vantagens {
-	background-color: rgba(7, 107, 133, 0.7);
+	background-color: rgba(41, 84, 160, 0.7);
 	color: #fff;
 	font-size: 15pt;
 	height: 250px;
@@ -1700,11 +1712,38 @@ Contact Page
     flex-direction: column;
 }
 
+.lista-produtos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px 20px;
+}
+
+.lista-produtos .item-produtos {
+	background-color: #ddd;
+	border: 1px solid #111;
+	border-radius: 10px;
+	margin: 0 auto;
+	text-align: center;
+	outline: none;
+	padding: 1rem 3rem;
+	width: 100%;
+}
+
+/* .lista-produtos .produtos-rodape {
+	
+} */
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	.list-vantagens {
 		margin: 0 auto;
 		grid-template-columns: 1fr 1fr 1fr;
     	grid-gap: 10px 10px;
+	}
+
+	.lista-produtos {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px 20px;
 	}
 }
 
@@ -1721,6 +1760,12 @@ Contact Page
 		width: 100%;
 		margin-bottom: 10px;
 	}
+
+	.lista-produtos {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px 20px;
+	}
 }
 
 /* Large Mobile :480px. */
@@ -1735,6 +1780,18 @@ Contact Page
 		width: 100%;
 		margin-bottom: 10px;
 	}
+
+	.lista-produtos {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.lista-produtos > .item-produtos {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
 }
 
 /* Small Mobile :320px. */
